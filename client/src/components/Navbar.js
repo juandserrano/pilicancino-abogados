@@ -21,7 +21,7 @@ const useStyles = makeStyles((theme) => ({
     padding: "5px",
   },
   toolBar: {
-    background: "rgb(80, 80, 80)",
+    background: "rgb(50, 50, 50)",
     minHeight: "30px",
   },
   appbar: {
@@ -36,19 +36,19 @@ const Navbar = () => {
     <AppBar className={classes.appbar} position="static">
       <Toolbar className={classes.toolBar}>
         <Grid container justify="space-around">
-          <Link to="/">
+          <Link to="/" style={{ textDecoration: "none" }}>
             <IconButton className={classes.toolBarText} color="inherit" aria-label="menu">
-              <Typography variant="body1">Quienes Somos</Typography>
+              <Typography variant="body1">QUIENES SOMOS</Typography>
             </IconButton>
           </Link>
-          <Link to="/servicios">
+          <Link to="/servicios" style={{ textDecoration: "none" }}>
             <IconButton className={classes.toolBarText} color="inherit" aria-label="menu">
-              <Typography variant="body1">Nuestros Servicios</Typography>
+              <Typography variant="body1">SERVICIOS</Typography>
             </IconButton>
           </Link>
-          <Link to="/contacto">
+          <Link to="/contacto" style={{ textDecoration: "none" }}>
             <IconButton className={classes.toolBarText} color="inherit" aria-label="menu">
-              <Typography variant="body1">Contactenos</Typography>
+              <Typography variant="body1">CONTACTO</Typography>
             </IconButton>
           </Link>
         </Grid>

@@ -1,17 +1,12 @@
 body {
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
 
   /* top, transparent black, faked with gradient */
   background: linear-gradient(rgba(250, 250, 250, 0.9), rgba(250, 250, 250, 0.9)), url("./images/fondo.jpg") no-repeat center center fixed;
 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  -webkit-background: cover;
+  -moz-backgound: cover;
+  -o-background: cover;
+  background: cover;
 }
