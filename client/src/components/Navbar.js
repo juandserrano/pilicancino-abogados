@@ -1,6 +1,7 @@
 import React from "react";
-import { Grid, AppBar, Toolbar, IconButton, Typography, Button } from "@material-ui/core";
+import { Grid, AppBar, Toolbar, IconButton, Typography, ListItem } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
+import { Link } from "react-router-dom";
 
 const useStyles = makeStyles((theme) => ({
   // root: {
@@ -35,21 +36,21 @@ const Navbar = () => {
     <AppBar className={classes.appbar} position="static">
       <Toolbar className={classes.toolBar}>
         <Grid container justify="space-around">
-          <a style={{ textDecoration: "none" }} href="/">
+          <Link to="/">
             <IconButton className={classes.toolBarText} color="inherit" aria-label="menu">
               <Typography variant="body1">Quienes Somos</Typography>
             </IconButton>
-          </a>
-          <a style={{ textDecoration: "none" }} href="/servicios">
+          </Link>
+          <Link to="/servicios">
             <IconButton className={classes.toolBarText} color="inherit" aria-label="menu">
               <Typography variant="body1">Nuestros Servicios</Typography>
             </IconButton>
-          </a>
-          <a style={{ textDecoration: "none" }} href="/contacto">
+          </Link>
+          <Link to="/contacto">
             <IconButton className={classes.toolBarText} color="inherit" aria-label="menu">
               <Typography variant="body1">Contactenos</Typography>
             </IconButton>
-          </a>
+          </Link>
         </Grid>
       </Toolbar>
     </AppBar>

@@ -17,17 +17,17 @@ function App() {
   const classes = useStyles();
   return (
     <>
-      <Navbar />
-      <div className={classes.main}>
-        <Router>
+      <Router>
+        <Navbar />
+        <div className={classes.main}>
           <Switch>
             <Route exact path="/" component={Portal} />
             <Route path="/about" component={QuienesSomos} />
             <Route path="/contacto" component={Contacto} />
             <Route path="/servicios" component={Servicios} />
           </Switch>
-        </Router>
-      </div>
+        </div>
+      </Router>
     </>
   );
 }
